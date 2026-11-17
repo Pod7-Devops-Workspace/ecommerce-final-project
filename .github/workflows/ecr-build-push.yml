@@ -20,7 +20,6 @@ jobs:
       list: ${{ steps.list.outputs.list }}
     steps:
       - id: list
-        shell: bash
         run: |
           SERVICES = '["accounting","ad","agent","cart","chatbot","checkout","currency","email",
                 "flagd-ui","fraud-detection","frontend","frontend-proxy","image-provider",
