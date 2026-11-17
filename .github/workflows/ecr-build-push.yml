@@ -100,7 +100,7 @@ jobs:
   # ---- 2. Point the k8s-file repo at the new images; Argo CD deploys them ----
   update-k8s-manifests:
     needs: [services, build-and-push] # runs only if every image built
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
         with:
