@@ -34,6 +34,7 @@ out/
 build
 next-env.d.ts
 vendor/
+!src/flagd-ui/assets/vendor/
 composer.lock
 .venv
 .dockerhub.env
